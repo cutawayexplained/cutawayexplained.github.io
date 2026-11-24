@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cutaway Uploader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Connecting…</h1>
+<p>Handing the sign-in back to the Cutaway Uploader on this computer. You can close this window once it says done.</p>
+</main>
+<script>
+  // Forwards the OAuth result to the uploader running locally on this computer.
+  location.replace("http://localhost:8765/callback" + location.search);
+</script>
+</body>
+</html>
